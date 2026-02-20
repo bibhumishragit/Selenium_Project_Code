@@ -3,7 +3,7 @@ Feature: Login to Amazon website
     When User is in Amazon Home page verify Account login displays
     Then User tries to login with valid credentials
     #And User scrolls browser window
-    #Then User selects all the options matching from table
+    Then User selects all the options matching from table
     #|DropDownlist|
     #|All Categories|
     #|Alexa Skills|
