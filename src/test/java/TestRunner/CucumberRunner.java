@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/java/Feature/AmaxonLogin.feature",       // Path to your .feature files
+        features = "src/test/java/Feature/dataTable.feature",       // Path to your .feature files
         glue = {"Stepdefinition","Utilities"},                        // Package containing step definitions
         plugin = {
                 "pretty",                                   // Console output

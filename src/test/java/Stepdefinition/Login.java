@@ -3,6 +3,7 @@ package Stepdefinition;
 import io.cucumber.java.en.Then;
 import io.cucumber.datatable.DataTable;
 import org.openqa.selenium.By;
+import org.testng.annotations.Test;
 
 import javax.xml.crypto.Data;
 import java.util.ArrayList;
@@ -65,6 +66,7 @@ public class Login {
 
     @Then("User clicks something")
     public void user_clicks_something(DataTable datable) {
+        System.out.println("The test data printed in Horizontally--Meaning line by line");
         List<List<String>>datallist=datable.asLists();
         List<String>dlist1=datallist.get(0);
         dlist1.forEach(System.out::println);
@@ -79,7 +81,7 @@ public class Login {
             String hostdata=verticallist.get("host");
             String portdata=verticallist.get("port");
             String dbdata=verticallist.get("db_name");
-            System.out.println("Host::"+hostdata+"Port Details::"+portdata+"DB Details::"+dbdata);
+            System.out.println("::Host::"+hostdata+"::Port Details::"+portdata+"::DB Details::"+dbdata);
         });
     }
     @Then("User clicks datattable")
@@ -107,4 +109,5 @@ public class Login {
         System.out.println("Username::"+username);
         System.out.println("Passeord::"+password);
     }
+
 }

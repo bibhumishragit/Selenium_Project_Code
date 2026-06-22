@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Read_Configuration {
     private static String  filepath="D://Eclipse-Workspace//Selenium_Project_Code//src//test//resources//ConfigRead.properties";
-    private static Properties properties;
+    private static final Properties properties;
 
     static{
         try{
